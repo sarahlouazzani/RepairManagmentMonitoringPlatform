@@ -1,0 +1,25 @@
+/* Device Form Styles */
+.device-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.device-form-container h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.device-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .device-form {
+    padding: 20px;
+  }
+}

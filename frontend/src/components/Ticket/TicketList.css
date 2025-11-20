@@ -1,0 +1,91 @@
+/* Ticket List Styles */
+.ticket-list-container {
+  padding: 20px;
+}
+
+.ticket-table-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.ticket-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ticket-table thead {
+  background-color: #f8f9fa;
+}
+
+.ticket-table th,
+.ticket-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.ticket-table th {
+  font-weight: 600;
+  color: #555;
+}
+
+.ticket-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.ticket-description {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.status-open {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-progress {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.status-resolved {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.status-closed {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.status-default {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .ticket-table {
+    font-size: 0.875rem;
+  }
+
+  .ticket-table th,
+  .ticket-table td {
+    padding: 10px;
+  }
+
+  .ticket-description {
+    max-width: 150px;
+  }
+}

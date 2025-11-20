@@ -1,0 +1,25 @@
+/* Ticket Form Styles */
+.ticket-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ticket-form-container h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.ticket-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .ticket-form {
+    padding: 20px;
+  }
+}
