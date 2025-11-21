@@ -2,29 +2,23 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 
-// Layout Components
 import Navbar from './components/Layout/Navbar';
 
-// Page Components
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 
-// Device Components
 import DeviceList from './components/Device/DeviceList';
 import DeviceForm from './components/Device/DeviceForm';
 import DeviceDetail from './components/Device/DeviceDetail';
 
-// Ticket Components
 import TicketList from './components/Ticket/TicketList';
 import TicketForm from './components/Ticket/TicketForm';
 import TicketDetail from './components/Ticket/TicketDetail';
 
-// Workflow Components
 import WorkflowForm from './components/Workflow/WorkflowForm';
 
-// Auth Components
 import ProtectedRoute from './components/Auth/ProtectedRoute';
 
 function App() {
@@ -33,12 +27,10 @@ function App() {
       <Navbar />
       <main className="main-content">
         <Routes>
-          {/* Public Routes */}
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
 
-          {/* Protected Routes - Devices */}
           <Route
             path="/devices"
             element={
@@ -71,8 +63,7 @@ function App() {
               </ProtectedRoute>
             }
           />
-
-          {/* Protected Routes - Tickets */}
+            
           <Route
             path="/tickets"
             element={
@@ -106,7 +97,6 @@ function App() {
             }
           />
 
-          {/* Protected Routes - Workflows */}
           <Route
             path="/workflows/new/:ticketId"
             element={
@@ -116,7 +106,6 @@ function App() {
             }
           />
 
-          {/* Protected Routes - Profile */}
           <Route
             path="/profile"
             element={
@@ -126,7 +115,6 @@ function App() {
             }
           />
 
-          {/* Catch all - redirect to home */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
