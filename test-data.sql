@@ -19,14 +19,14 @@ INSERT INTO device (name, model, serial_number) VALUES
 
 -- Insert test tickets
 INSERT INTO ticket (status, description, device_id, user_id) VALUES 
-('En cours', 'Client a fait tomber le téléphone, écran totalement cassé', 2, 2),
-('Nouveau', 'Téléphone ne charge plus, vérifier port et batterie', 3, 1),
-('Terminé', 'Tester le nouveau clavier après remplacement', 4, 3),
-('En cours', 'Bouton home ne répond plus aux pressions', 5, 2),
-('Nouveau', 'Vérifier carte graphique et RAM', 6, 1),
-('Terminé', 'Nettoyer et remplacer ventilateur si nécessaire', 7, 3),
-('En cours', 'Micro ne fonctionne pas pendant les appels', 8, 2),
-('Nouveau', 'Port USB-C ne fonctionne plus', 9, 1);
+('En cours', 'Client a fait tomber le téléphone, écran totalement cassé', 1, 2),
+('Nouveau', 'Téléphone ne charge plus, vérifier port et batterie', 2, 1),
+('Terminé', 'Tester le nouveau clavier après remplacement', 3, 3),
+('En cours', 'Bouton home ne répond plus aux pressions', 4, 2),
+('Nouveau', 'Vérifier carte graphique et RAM', 5, 1),
+('Terminé', 'Nettoyer et remplacer ventilateur si nécessaire', 6, 3),
+('En cours', 'Micro ne fonctionne pas pendant les appels', 7, 2),
+('Nouveau', 'Port USB-C ne fonctionne plus', 8, 1);
 
 -- Insert test workflows
 INSERT INTO workflow (status, comments, ticketId) VALUES 

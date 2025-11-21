@@ -32,10 +32,10 @@ const DeviceList = () => {
           {data.devices.map((device) => (
             <div key={device.id} className="device-card">
               <h3>{device.name}</h3>
-              <p className="device-model">Model: {device.model}</p>
-              <p className="device-serial">Serial: {device.serial_number}</p>
+              <p className="device-model"><strong>Model:</strong> {device.model}</p>
+              <p className="device-serial"><strong>Serial:</strong> {device.serial_number}</p>
               <p className="device-date">
-                Created: {new Date(device.created_at).toLocaleDateString()}
+                <strong>Created:</strong> {new Date(device.created_at).toLocaleDateString()}
               </p>
               <div className="card-actions">
                 <Link to={`/devices/${device.id}`} className="btn btn-secondary">
